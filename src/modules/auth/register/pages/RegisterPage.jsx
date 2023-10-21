@@ -16,6 +16,7 @@ function RegisterPage() {
       })
       .catch((error) => {
         setRequestError(true);
+        console.log(error.response.data.original.detail)
         setErrorMessage(error.response.data.original.detail);
       });
   };
